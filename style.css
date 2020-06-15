@@ -1,0 +1,119 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ul li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.head-buttons a{
+    padding: 3px;
+}
+.numbers img{
+    width: 50px;
+    height: 50px;
+    
+}
+.numbers p{
+    font-size: 20px;
+    
+}
+.numbers span{
+   font-size: 20px;
+}
+
+.intro p{
+    margin-left: 100px;
+    margin-right: 100px;
+    
+    display: block;
+    text-align: center;}
+
+    
+    
+    
+    
+    
+
+.marg{
+    width: 30%;
+    
+    
+    
+    border-spacing: 2px;
+    box-shadow:0px 5px 20px 0px gray;
+   
+    
+}
+
+
+.img img{
+    width: 200px;
+    height: 150px;
+}
+.height{
+    height: 20px;
+}
+.color{
+    text-decoration: underline;
+    text-decoration-color: green;
+}
+.new{
+    background-color: rgb(39, 39, 180);
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    align-items: center;
+}
+
+.navbar-nav li:hover > ul.dropdown-menu{
+    display: block;
+}
+
+.dropdown-submenu{
+    position: relative;
+}
+
+.dropdown-submenu>.dropdown-menu{
+    top: 0;
+    left: 100%;
+}
+
+.dropdown-menu > li > a:hover::after{
+    text-decoration: underline;
+    transform: rotate(-90deg);
+}
+.design img{
+    width: 400px;
+    height: 50px;
+    padding-left: 200px;
+
+}
+.design1 div{
+    padding-left: 300px;
+    
+    
+    
+}
+.design1 a:hover{
+    background-color: blue;
+    border-radius: 25px;
+}
+.navbar{
+    overflow: hidden;
+}
+.sticky {
+    position: -webkit-sticky;
+    position: sticky;
+    
+    top: 0;
+    width: 100%;
+    z-index: 1;
+  }
+  
