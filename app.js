@@ -838,3 +838,320 @@ else{
     document.write("Please write correct input")
 
 }
+
+//chap14-16
+//question1
+var arr=[""];
+//question2
+var arr1=newarr("");
+//question3
+var string=["A","B","C"];
+//question4
+var num=[1,2,3];
+//question5
+var boolean=[0,1,01,10];
+//question6
+var mix=["A",0,5];
+//question7
+var qual=["SSC","HSC","BCS","BS","BCOM","MS","M.Phil.","PhD"];
+var heading=("<h1>"+"Qualification"+"</h1>")
+document.write( "<br>"+ heading)
+document.write( "<br>"+ "1) " + qual[0])
+document.write( "<br>"+ "2) " + qual[1])
+document.write( "<br>"+ "3) " + qual[2])
+document.write( "<br>"+ "4) " + qual[3])
+document.write( "<br>"+ "5) " + qual[4])
+document.write( "<br>"+ "6) " + qual[5])
+document.write( "<br>"+ "7) " + qual[6])
+document.write( "<br>"+ "8) " + qual[7])
+
+
+
+//question8
+var student=["Michael","John","Tony"];
+var score=[320,230,480];
+var total=500;
+var percent1=(score[0]/total)*100;
+var percent2=(score[1]/total)*100;
+var percent3=(score[2]/total)*100;
+
+var heading=("<h1>"+"Sheet"+"</h1>")
+document.write( "<br>"+ heading)
+document.write( "<br>"+ "Score of " + student[0]+ " is"+ score[0] +". Percentage :"+percent1)
+document.write( "<br>"+ "Score of " + student[1]+ " is"+ score[1] +". Percentage :"+percent2)
+document.write( "<br>"+ "Score of " + student[2]+ " is"+ score[2] +". Percentage :"+percent3)
+
+
+//question9
+var color=["Red","Yellow" ,"Green"];
+var heading=("<h1>"+"Colors"+"</h1>")
+document.write( "<br>"+ heading)
+document.write( "<br>"+ color)
+//a
+var x=prompt("Enter color you want to add in beginning");
+y=color.unshift(x);
+document.write( "<br>"+ y)
+
+//b
+var b=prompt("Enter color you want to add in end");
+z=y.push(b);
+document.write( "<br>"+ z)
+
+//c
+e=z.unshift("Blue","Black");
+document.write( "<br>"+ e)
+//d
+g=e.shift();
+document.write( "<br>"+ g)
+//e
+h=g.pop();
+document.write( "<br>"+ h)
+
+
+//f
+var color=prompt("Enter color you want to add");
+var ind=+prompt("Enter index");
+k=h.splice(ind,0,color);
+document.write( "<br>"+ k)
+
+//g
+var color=+prompt("Enter how many colors you want to delete");
+var ind=+prompt("Enter index");
+j=k.splice(ind,color);
+document.write( "<br>"+ k)
+
+//question10
+var score=[320,230,480,120];
+document.write( "<br>"+"Scores of Students: "+ score)
+var o=score.sort();
+
+document.write( "<br>"+"Ordered Scores of Students: "+ o)
+
+//question11
+ var cities=["Karachi","Lahore","Islamabad","Quetta","Peshawar"];
+ document.write( "<br>"+"Cities list: "+ "<br>"+cities)
+
+ var selected_cities=cities.slice(2,4);
+ document.write( "<br>"+"Selected Cities list: "+ "<br>"+ selected_cities)
+ 
+ //question12
+ var arr=["This","is","my","cat"];
+ var arr1=arr.join();
+ document.write( "<br>"+"Array: "+ "<br>"+ arr1)
+
+ var arr2=arr.join("");
+ document.write( "<br>"+"String: "+ "<br>"+ arr2);
+
+ //question13
+ var dev=["keyboard","mouse","printer","monitor"];
+ var dev1=dev.join();
+ document.write( "<br>"+"Devices: "+ "<br>"+ dev);
+ var a=dev.shift();
+ document.write( "<br>"+"Out: "+ "<br>"+ a);
+ var b=dev.shift();
+ document.write( "<br>"+"Out: "+ "<br>"+ b);
+ var c=dev.shift();
+ document.write( "<br>"+"Out: "+ "<br>"+ c);
+ var d=dev.shift();
+ document.write( "<br>"+"Out: "+ "<br>"+ d);
+
+ //question14
+ var dev=["keyboard","mouse","printer","monitor"];
+ var dev1=dev.join();
+ document.write( "<br>"+"Devices: "+ "<br>"+ dev);
+ var a=dev.pop();
+ document.write( "<br>"+"Out: "+ "<br>"+ a);
+ var b=dev.pop();
+ document.write( "<br>"+"Out: "+ "<br>"+ b);
+ var c=dev.pop();
+ document.write( "<br>"+"Out: "+ "<br>"+ c);
+ var d=dev.pop();
+ document.write( "<br>"+"Out: "+ "<br>"+ d);
+
+ //question15
+
+
+ var score = [320, 230, 480, 120];
+ document.write("<br>" + "Scores of Students: " + score)
+ var o = score.sort();
+ 
+ document.write("<br>" + "Ordered Scores of Students: " + o)
+ var dev = ["keyboard", "mouse", "printer", "monitor"];
+ var dev1 = dev.join();
+ document.write("<br>" + "Devices: " + dev);
+ var a = dev.shift();
+ document.write("<br>" + "Out: " + a);
+ var arr = ["Apple", "Samsung", "Motorola", "Nokia", "Sony", "Haier"]
+ document.write("<br>")
+ document.write(" <div >" + "<h1>" + "MENU" + "</h1>" + "<br>" + "<p>" + arr[0] + "</p>" +
+     "<br>" + "<p>" + arr[1] + "</p>" +
+     "<br>" + "<p>" + arr[2] + "</p>" +
+     "<br>" + "<p>" + arr[3] + "</p>" +
+     "<br>" + "<p>" + arr[4] + "</p>" +
+     "<br>" + "<p>" + arr[5] + "</p>")
+ //chap17-20
+ //question1
+ var arr = [
+     ["",],
+     ["",],
+     ["",],
+     ["",],
+ 
+ ]
+ //question2
+ 
+ arr = [[], [], []];
+ document.write(arr[0][0] = 0)
+ document.write(arr[0][1] = 1)
+ 
+ document.write(arr[0][2] = 2)
+ document.write(arr[0][3] = 3)
+ document.write("<br>")
+ 
+ 
+ document.write(arr[1][0] = 1)
+ document.write(arr[1][1] = 0)
+ document.write(arr[1][2] = 1)
+ document.write(arr[1][3] = 2)
+ document.write("<br>")
+ 
+ document.write(arr[2][0] = 2)
+  document.write(arr[2][1] = 1)
+ document.write(arr[2][2] = 0)
+ document.write(arr[2][3] = 1)
+ //question3
+ var a;
+ for (i=1;i<=10;i++){
+     document.write("<br>"+i)
+ }
+ 
+ //question4
+ var num=+prompt("Enter number");
+ var leng=+prompt("Enter length");
+ document.write("<br>" + "Multiplication table of  " + num)
+ document.write("<br>" + "Length : " + leng)
+ 
+ 
+ for (i=1;i<=leng;i++){
+     var x=num*i;
+     document.write("<br>"+num+"x"+i+"="+x)
+ }
+ //question5
+ var fruits = ["apple", "banana", "mango", "orange", "strawberry"];
+ for (i=0;i<=4;i++){
+     
+     document.write("<br>"+fruits[i])
+ }
+ for (i=0;i<=4;i++){
+     
+     document.write("<br>"+"Element at index "+i+" is "+fruits[i])
+ }
+ 
+ //question6
+ //a
+ document.write("<br>" + "Counting : " )
+ for (i=1;i<=15;i++){
+    
+     
+     document.write("<br>"+i)
+ }
+ //b
+ document.write("<br>" +  "Reverse Counting : " )
+ for (i=10;i>=1;i--){
+    
+     
+     document.write("<br>"+i)
+ }
+ 
+ //c
+ document.write("<br>" + "Even : " )
+ for (i=0;i<=20;i++){
+     if(i%2==0){
+     
+     
+     document.write("<br>"+i)}
+ 
+ }
+ 
+ //d
+ document.write("<br>" + "Odd : " )
+ for (i=0;i<=20;i++){
+     if(i%2!=0){
+     
+     
+     document.write("<br>"+i)}
+ 
+ }
+ document.write("<br>" + "Series : " )
+ for (i=2;i<=20;i++){
+     if(i%2==0){
+     
+     
+     document.write("<br>"+i+"k")}
+ 
+ }
+ 
+ //question7
+ var a = ["cake", "apple pie", "cookie", "chips", "patties"];
+ var b=prompt("What do you want to order: ");
+ 
+ for (i=0;i<=5;i++){
+     if (b==a[i]){
+     
+     
+     document.write("<br>"+b+" is available at index "+i+" in our bakery")
+     break;}
+     else if(i==6 && b!=a[i]) { document.write("<br>"+"We are sorry."+b+" is not available in our bakery")}
+     
+ 
+     }
+ 
+     //question8
+     
+     var a = [91, 53, 78, 24, 12];
+     var b=a[0];
+     document.write("<br>" + "Array Items : " +a)
+     for (i=0;i<=4;i++){
+         
+ 
+         if (a[i]>b){
+             b=a[i];
+         
+         
+         document.write("<br>"+"The largest number is "+b)}
+         }
+     
+     //question9
+     var a = [24, 53, 78, 91, 12];
+     document.write("<br>" + "Array Items : " +a)
+     var b=a[0];
+     for (i=0;i<=4;i++){
+         
+ 
+         if (a[i]<b){
+             b=a[i];
+         
+         
+         document.write("<br>"+"The smallest number is "+b)}
+         }
+     //question10
+     document.write("<br>")
+     for (i=1;i<=100;i++){
+             if(i%5==0){
+             
+             
+             document.write("<br>"+i)}
+         
+         }
+
+
+
+
+
+
+
+
+
+
+
+
