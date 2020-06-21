@@ -1094,32 +1094,34 @@ document.write( "<br>"+"Ordered Scores of Students: "+ o)
  //question7
  var a = ["cake", "apple pie", "cookie", "chips", "patties"];
  var b=prompt("What do you want to order: ");
+ var x=0;
  
  for (i=0;i<=5;i++){
      if (b==a[i]){
-     
+     x=1;
      
      document.write("<br>"+b+" is available at index "+i+" in our bakery")
      break;}
-     else if(i==6 && b!=a[i]) { document.write("<br>"+"We are sorry."+b+" is not available in our bakery")}
+     
      
  
      }
+      if(x==0) { document.write("<br>"+"We are sorry."+b+" is not available in our bakery")}
  
      //question8
      
-     var a = [91, 53, 78, 24, 12];
+     var a = [78, 53, 91, 24, 12];
      var b=a[0];
      document.write("<br>" + "Array Items : " +a)
      for (i=0;i<=4;i++){
          
  
          if (a[i]>b){
-             b=a[i];
+             b=a[i];}
          
+         }  
+         document.write("<br>"+"The largest number is "+b)
          
-         document.write("<br>"+"The largest number is "+b)}
-         }
      
      //question9
      var a = [24, 53, 78, 91, 12];
@@ -1131,9 +1133,9 @@ document.write( "<br>"+"Ordered Scores of Students: "+ o)
          if (a[i]<b){
              b=a[i];
          
+         }}
+         document.write("<br>"+"The smallest number is "+b)
          
-         document.write("<br>"+"The smallest number is "+b)}
-         }
      //question10
      document.write("<br>")
      for (i=1;i<=100;i++){
